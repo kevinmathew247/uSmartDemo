@@ -10,7 +10,7 @@ This project is a technical task to demonstrate how to consume data from a CSV f
 
 1. Clone the repository:
 
-   git clone https://github.com/yourusername/uSmartDemo.git
+   gh repo clone kevinmathew247/uSmartDemo
 
 2. Set Up a Virtual Environment
 
