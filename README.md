@@ -59,11 +59,11 @@ Open your browser and go to http://localhost:4000/test to ensure the application
 	2.	Use the POST method to upload a CSV file to http://localhost:4000/upload as shown below. If there are no outliers present the file will upload with a response message 'File successfully processed and inserted into the database'.
 
 
-![alt text](1665CDD4-7805-4C31-9723-A1F303F40B1D.jpeg)
+![alt text](./images/1665CDD4-7805-4C31-9723-A1F303F40B1D.jpeg)
 
 If there are any outliers in the file, then the error 'Outliers detected' will be returned as shown below.
 
-![alt text](4470740E-0C3B-4835-BEE1-4B6984F03B7A.jpeg)
+![alt text](./images/4470740E-0C3B-4835-BEE1-4B6984F03B7A.jpeg)
 
 To view the new table follow the steps below:
 
@@ -106,9 +106,9 @@ SELECT * FROM uploaded_data;
 
 
 
-![alt text](FF612435-333E-4BBC-8849-0863C915AB9C.jpeg)
+![alt text](./images/FF612435-333E-4BBC-8849-0863C915AB9C.jpeg)
 
-![alt text](48251DC9-5B48-4306-BD70-F668C7FBAF66_4_5005_c.jpeg)
+![alt text](./images/48251DC9-5B48-4306-BD70-F668C7FBAF66_4_5005_c.jpeg)
 
 
 ## Testing
