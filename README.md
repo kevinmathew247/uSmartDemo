@@ -108,12 +108,18 @@ SELECT * FROM uploaded_data;
 
 ![alt text](./images/FF612435-333E-4BBC-8849-0863C915AB9C.jpeg)
 
+Below is an image of the column types created in the new table:
+
 ![alt text](./images/48251DC9-5B48-4306-BD70-F668C7FBAF66_4_5005_c.jpeg)
 
+which can be viewed by running the command:
 
+```
+\d+ uploaded_data 
+```
 ## Testing
 
-Two test CSV files are provided in the app/tests directory:
+Two test CSV files are provided in the tests directory:
 
 	•	test_1.csv: A valid file with no outliers.
 	•	test_2.csv: A file with an outlier.
