@@ -13,7 +13,7 @@ DATABASE_URL = "postgresql://postgres:password@postgres:5432/postgres"
 # SQLAlchemy base
 Base = declarative_base()
 
-# Define your SQLAlchemy model
+# Defining the SQLAlchemy model for migrating
 class UploadedData(Base):
     __tablename__ = 'uploaded_data'
 
@@ -22,11 +22,12 @@ class UploadedData(Base):
     value = Column(Integer)
     category = Column(String)
 
-# Create engine and session
+# Creating the engine and session
 engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)
 session = Session()
 
+# Upload method code
 @app.route('/upload', methods=['POST'])
 def upload_csv():
     if 'file' not in request.files:
@@ -52,6 +53,7 @@ def upload_csv():
 
     return "File successfully processed and inserted into the database", 200
 
+# Test method
 @app.route('/test', methods=['GET'])
 def test():
     return jsonify({'message': 'Test route'}), 200

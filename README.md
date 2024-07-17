@@ -17,29 +17,30 @@ This project is a technical task to demonstrate how to consume data from a CSV f
 It is recommended to use a virtual environment to manage dependencies.
 
 For Windows:
-'''
+```
 python -m venv venv
 venv\Scripts\activate
-'''
+```
+
 For MacOS/Linux:
-'''
+```
 python3 -m venv venv
 source venv/bin/activate
-'''
+```
 
 3. Install Dependencies
 
 With the virtual environment activated, install the required dependencies:
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 4. Configure the Database
 
 Ensure that PostgreSQL is installed and running. Update the DATABASE_URL in the app.py file with your PostgreSQL credentials:
-'''
+```
 DATABASE_URL = "postgresql://postgres:password@postgres:5432/postgres"
-'''
+```
 
 
 5.	Build and start the Docker containers:
@@ -67,41 +68,43 @@ If there are any outliers in the file, then the error 'Outliers detected' will b
 To view the new table follow the steps below:
 
 Step 1: List Running Containers
-'''
+```
 docker ps
-'''
+```
 
 This command will list all running Docker containers. Look for the PostgreSQL container and note its container ID or name.
 
 Step 2: Access the PostgreSQL Container
 Use the container ID or name from the previous step to access the container.
-'''
+```
 docker exec -it < container_id_or_name> bash
-'''
-Replac the ‹container_id_or_name> with the actual ID or name of your PostgreSQL container.
+```
+Replace the ‹container_id_or_name> with the actual ID or name of your PostgreSQL container.
 
 Step 3: Connect to PostgreSQL Database
 Inside the container, connect to the PostgreSQL database using the psql command-line tool:
-'''
+```
 psql -U postgres -d postgres
-'''
+```
 
 • -U postgres specifies the PostgreSQL user (in this case, postgres).
 • -d postgres specifies the database to connect to (in this case I have set that also as postgres).
 
 Step 4: List Tables
 Once connected to the database, list all tables:
-'''
+```
 \dt
-'''
+```
 
 Step 5: Query the Table
 
 To view data in the uploaded _data table:
 
-'''
+```
 SELECT * FROM uploaded_data;
-'''
+```
+
+
 
 ![alt text](FF612435-333E-4BBC-8849-0863C915AB9C.jpeg)
 
