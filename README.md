@@ -55,9 +55,10 @@ Open your browser and go to http://localhost:4000/test to ensure the application
 
 ## Usage
 
-	1.	Open Postman or any other API client.
-	2.	Use the POST method to upload a CSV file to http://localhost:4000/upload as shown below. If there are no outliers present the file will upload with a response message 'File successfully processed and inserted into the database'.
+1.	Open Postman or any other API client.
+2.	Use the POST method to upload a CSV file to http://localhost:4000/upload as shown below. 
 
+If there are no outliers present the file will upload with a response message 'File successfully processed and inserted into the database'.
 
 ![alt text](./images/1665CDD4-7805-4C31-9723-A1F303F40B1D.jpeg)
 
